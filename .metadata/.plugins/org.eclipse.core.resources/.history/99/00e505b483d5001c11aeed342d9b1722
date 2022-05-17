@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String allCaps = "ALLCAPS";
+		String notAllCaps = "notALLCAPS";
+		String hasAnumber = "This has 1 number in it.";
+		String allCapsRegex =  "[A-Z\\s]+";
+		String hasAnumberRegex = ".*[0-9].*";
+		String phoneNumberRegex = "\\(\\d{3}\\)\\d{3}-\\d{4}";
+		String phoneNumber = "(734)475-8015";
+		
+		System.out.println(isValid(allCaps, allCapsRegex));
+		System.out.println(isValid(notAllCaps, allCapsRegex));
+		System.out.println(isValid(hasAnumber, hasAnumberRegex));
+		System.out.println(isValid(notAllCaps, hasAnumberRegex));
+		System.out.println(isValid(phoneNumber, phoneNumberRegex));
+		System.out.println(isValid(hasAnumber, phoneNumberRegex));
+
+	}
+	
+	public static boolean isValid(String data, String regex) {
+		return data.matches(regex);
+	}
+
+}

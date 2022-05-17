@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String allCaps = "ALLCAPS";
+		String notAllCaps = "notALLCAPS";
+		String allCapsRegex =  "[A-Z\\s]+";
+		
+		System.out.println(upperString(allCaps, allCapsRegex));
+
+	}
+	
+	public static boolean upperString(String data, String regex) {
+		return data.matches(regex);
+	}
+
+}

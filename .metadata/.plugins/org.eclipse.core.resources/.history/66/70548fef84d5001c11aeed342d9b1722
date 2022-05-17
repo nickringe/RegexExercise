@@ -1,0 +1,35 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MainTest {
+
+	@Test
+	void allCapTest() {
+		String actual = "LKSDJFLSKDJFLSDKFJSLKFJOIEUROWIEUROWIEUR";
+		String expected = "[A-Z\\s]+";
+		assertTrue(actual.matches(expected));
+	}
+	
+	@Test
+	void allCapTest2() {
+		String actual = "aKSDJFLSKDJFLSDKFJSLKFJOIEUROWIEUROWIEUR";
+		String expected = "[A-Z\\s]+";
+		assertFalse(actual.matches(expected));
+	}
+	
+	@Test
+	void hasNumTest() {
+		String actual = "1KSDJFLSKDJFLSDKFJSLKFJOIEUROWIEUROWIEUR";
+		String expected = ".*[0-9].*";
+		assertTrue(actual.matches(expected));
+	}
+	
+	@Test
+	void hasNumTest2() {
+		String actual = "KSDJFLSKDJFLSDKFJSLKFJOIEUROWIEUROWIEUR";
+		String expected = ".*[0-9].*";
+		assertFalse(actual.matches(expected));
+	}
+
+}

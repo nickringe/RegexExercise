@@ -1,0 +1,14 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MainTest {
+
+	@Test
+	void allCapTest() {
+		String actual = "LKSDJFLSKDJFLSDKFJSLKFJOIEUROWIEUROWIEUR";
+		String expected = "[A-Z\\s]+";
+		assertEquals(expected.matches(actual), actual);
+	}
+
+}

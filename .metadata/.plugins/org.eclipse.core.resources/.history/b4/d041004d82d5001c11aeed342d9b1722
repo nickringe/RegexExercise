@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String allCaps = "ALLCAPS";
+		String notAllCaps = "notALLCAPS";
+		
+		upperString(allCaps, notAllCaps);
+
+	}
+	
+	public static boolean upperString(String data, String regex) {
+		return data.matches(regex);
+	}
+
+}

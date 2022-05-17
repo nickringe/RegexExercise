@@ -1,0 +1,18 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String allCaps = "ALLCAPS";
+		String notAllCaps = "notALLCAPS";
+		String allCapsRegex =  "[A-Z\\s]+";
+		
+		System.out.println(isValid(allCaps, allCapsRegex));
+		System.out.println(isValid(notAllCaps, allCapsRegex));
+
+	}
+	
+	public static boolean isValid(String data, String regex) {
+		return data.matches(regex);
+	}
+
+}

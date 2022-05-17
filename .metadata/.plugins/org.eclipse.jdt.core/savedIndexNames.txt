@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+C:\Users\nickr\OneDrive\Desktop\GrandCircus\RegexExercise\.metadata\.plugins\org.eclipse.jdt.core
+760091825.index
+1865797976.index
+2963021562.index
+1505259661.index
+2246169811.index
+432904991.index
+533246199.index
+1978011888.index
+2813106865.index
+1853548649.index
+1181991552.index
+570914431.index
+3471518662.index
+3980620497.index
+1216817516.index
+1366152524.index
+3496306340.index
+2956671492.index
+3175517317.index
